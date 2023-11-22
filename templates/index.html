@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>Convertir Image en PDF</title>
+</head>
+
 <body>
+    <h1>Upload d'image pour conversion en PDF</h1>
     <form action="/convert" method="post" enctype="multipart/form-data">
-        <input type="file" name="image">
-        <input type="submit">
+        <input type="file" name="image" required>
+        <input type="email" name="email" placeholder="Entrez votre email" required>
+        <input type="submit" value="Convertir et Envoyer">
     </form>
 </body>
 
